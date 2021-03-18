@@ -18,12 +18,13 @@
 
 <body class="container" ng-controller="MainCtrl">
   <pre>
-    {{selectedUnits}}
+    {{fdata}}
   </pre>
 
-  <div  ng-dropdown-multiselect="" options="allUnits" selected-model="selectedUnits"
+  <div   ng-dropdown-multiselect="" options="allUnits" selected-model="selectedUnits" final-data="fdata"
     extra-settings="defaultSettings" checkboxes></div> 
   
+
 </body>
 
 </html>

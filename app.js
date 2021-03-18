@@ -7,7 +7,8 @@ app.controller('MainCtrl', function ($scope) {
         { value: {
             name:"DELHI",
             img:"delhi.png",
-            children:[]
+            children:[],
+            age:56
         }, label: "DELHI" }, 
         { value: {
             name:"IKONO",
@@ -16,4 +17,10 @@ app.controller('MainCtrl', function ($scope) {
         }, label: "IKONO" }
     ];
     $scope.defaultSettings = { enableSearch: true, smartButtonMaxItems: 3};
+
+    $scope.printVal = ()=>{
+        console.log("okkkkkkk");
+        console.log($scope.fdata);
+    }
+
 });
